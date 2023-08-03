@@ -1,0 +1,56 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+nav {
+    padding: 20px;
+    display:flex;
+    font-size:12px;
+    background-color: #101010;
+}
+
+.logo a {
+    color:orange;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.menu-right {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.menu-items a {
+    color:orange;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+} 
+
+.caret {
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .caret {
+        display: block;
+        margin-left: auto;
+    }
+    .menu-right {
+        display: none; 
+    }
+    .open {
+        display: flex;
+        flex-direction: column;
+        transition: .5s;
+    }
+    .logo a {
+        color:white
+    }
+}
+
+
+  
